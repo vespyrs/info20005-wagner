@@ -39,6 +39,21 @@ function closeFilter() {
   document.body.classList.remove("modal-open");
 }
 
+function addSingleClick() { // add to cart button on single product page
+  document.getElementById('btn-checkout').innerHTML = "Added!"
+  setTimeout(function() {
+      document.getElementById('btn-checkout').innerHTML = "Add To Cart"
+  }, 400)
+}
+
+function addIconClick(itemid) { // add to cart button on category page
+  var id = "add-button-" + itemid
+  document.getElementById(id).innerHTML = "ADDED!"
+  setTimeout(function() {
+      document.getElementById(id).innerHTML = "ADD TO CART"
+  }, 500)
+}
+
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }

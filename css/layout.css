@@ -16,8 +16,14 @@ body.modal-open {
     margin-top: 120px;
 }
 
-.hero-wrapper, .checkout-title-wrap, .order-confirm-wrap {
+.hero-wrapper, 
+.checkout-title-wrap, 
+.order-confirm-wrap {
     padding-top: 120px;
+}
+
+.single-item-wrapper {
+    padding-top: 140px;
 }
 
 nav {
@@ -157,6 +163,11 @@ nav {
     padding: var(--space-xxxs);
     margin: var(--space-xxs);
     justify-content: space-around;
+}
+
+.item-wrapper:hover {
+    transform: scale(1.02);
+    transition: 0.1s;
 }
 
 .item-details-wrapper > h3 {
@@ -299,29 +310,56 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    padding-top: var(--space-xl);
     max-width: 1200px;
-    border: 1px black solid;
+    margin-bottom: var(--space-lg);
 }
 
 .single-item-img-wrapper {
     display: flex;
     justify-content: space-between;
-    border: 1px black solid;
 }
 
 .img-item-carousel {
     display: flex;
     flex-direction: column;
+    margin-right: var(--space-sm);
 }
 
 .item-description {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: var(--space-md);
-    border: 1px black solid;
+    padding: var(--space-lg);
+    padding-top: 0;
+    margin-top: -1em;
     width: 500px;
+}
+@media (max-width: 541px) { /* smallest single product page resizing */
+    .item-hero-img {
+        width: 90vw; 
+    }
+    .single-item-wrapper {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 1175px) { /* smaller single product page resizing */
+    .single-item-img-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: var(--space-lg);
+    }
+    .img-item-carousel {
+        display: flex;
+        flex-direction: row;
+        margin-top: var(--space-sm);
+        margin-right: 0;
+        padding-left: var(--space-sm)
+    }
+    .item-carousel-img {
+        margin-right: var(--space-sm);
+    }
 }
 
 footer {
@@ -674,10 +712,6 @@ footer {
     align-items: center;
 }
 
-.cart-sum-wrap {
-    /* margin-left: var(--space-sm); */
-}
-
 .order-sum-wrap {
     margin-bottom: var(--space-xxl);
 
@@ -726,7 +760,7 @@ footer {
     .contact-info-wrap {
         padding-left: var(--space-sm);
     }
-    h1 {
+    .checkout-title-wrap > h1 {
         margin-bottom: 0;
     }
 }

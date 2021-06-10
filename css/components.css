@@ -117,12 +117,15 @@
     width: 100%; 
     display: block; 
     height: auto;
+    border-radius: 15px;
 
 }
 
 .item-carousel-img {
     height: 80px;
     width: 80px;
+    margin-bottom: var(--space-sm);
+    border-radius: 10px;
 }
 
 .img-cart {
@@ -140,6 +143,11 @@
     margin: var(--space-sm);
     text-transform: uppercase;
     color: var(--white);
+    font-size: var(--text-md);
+}
+
+.btn-checkout:hover {
+    background-color: var(--color-primary-dark);
 }
 
 .btn-go-back {
@@ -151,6 +159,10 @@
     text-transform: uppercase;
     color: var(--gray-9);
     text-align: center;
+}
+
+.btn-go-back:hover {
+    background-color: var(--gray-1);
 }
 
 #btn-delete {
@@ -274,4 +286,18 @@ hr {
 #post-paypal {
     position: relative;
     z-index: -1;
+}
+
+.item-description > button {
+    margin-left: 0;
+    margin-top: var(--space-md);
+}
+
+.add-to-cart-wrapper:hover button:first-child {
+    color: black;
+}
+
+.add-to-cart-wrapper:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
 }

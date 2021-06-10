@@ -129,6 +129,7 @@ h5 {
 p {
   font-weight: 400;
   font-size: var(--text-lg);
+  line-height: var(--space-md);
 }
 
 .site-identity {
@@ -211,4 +212,21 @@ p {
   text-align: center;
   margin-top: var(--space-md);
   margin-bottom: var(--space-lg);
+}
+
+.item-description > h3 {
+  font-size: var(--text-xxxl);
+}
+
+.item-description > h5 {
+  font-size: var(--text-md);
+  color: var(--gray-4);
+}
+
+.item-description > h2 {
+  font-size: var(--text-xxxl);
+  font-weight: 700;
+  font-style: normal;
+  margin-top: var(--space-xxxs);
+  margin-bottom: var(--space-sm);
 }
