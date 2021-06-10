@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="preload" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/97555/alert-circle.svg" as="image">
+    <link rel="preload" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/97555/check-circle.svg" as="image">
     <script src="js/mobile-nav.js"></script>
     <script src="js/nav.js"></script>
     <title>Wagner Online</title>
@@ -17,30 +19,38 @@
     <div class="checkout-wrap">
         <div class="contact-info-wrap">
             <h3>Contact Information</h3>
-            <form class="contact-info-form">
+            <form class="contact-info-form" id="contact-info-form" action="./payment.html">
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" placeholder="Email" class="contact-info"><br>
                 <label for="country">Country/Region:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Country/Region" class="contact-info"><br>
+                <input type="text" id="country" name="country" placeholder="Country/Region" class="contact-info">
+                <p>Please enter a valid country/region</p><br>
                 <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="First name" class="contact-info"><br>
+                <input type="text" id="fname" name="fname" placeholder="First name" class="contact-info">
+                <p>Please enter a valid first name</p><br>
                 <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Last name" class="contact-info"><br>
+                <input type="text" id="lname" name="lname" placeholder="Last name" class="contact-info">
+                <p>Please enter a valid last name</p><br>
                 <label for="phone">Mobile phone:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="Mobile phone" class="contact-info"><br>
+                <input type="tel" id="phone" name="phone" placeholder="Mobile phone" class="contact-info">
+                <p>Please enter a valid mobile phone no.</p><br>
                 <label for="add1">Address line 1:</label><br>
-                <input type="text" id="add1" name="add2" placeholder="Address line 1" class="contact-info"><br>
+                <input type="text" id="add1" name="add2" placeholder="Address line 1" class="contact-info">
+                <p>Please enter a valid address</p><br>
                 <label for="add2">Address line 2:</label><br>
                 <input type="text" id="add2" name="add2" placeholder="Address line 2" class="contact-info"><br>
                 <label for="suburb">Suburb:</label><br>
-                <input type="text" id="suburb" name="suburb" placeholder="Suburb" class="contact-info"><br>
+                <input type="text" id="suburb" name="suburb" placeholder="Suburb" class="contact-info">
+                <p>Please enter a valid suburb</p><br>
                 <label for="state">State:</label><br>
-                <input type="text" id="state" name="state" placeholder="State" class="contact-info"><br><br>
-              </form> 
-              <div class="checkout-btn-wrap">
-                <button class="btn-checkout"><a href="./payment.html">Proceed to payment</a></button>
+                <input type="text" id="state" name="state" placeholder="State" class="contact-info">
+                <p>Please enter a valid state</p><br><br>
+                <div class="checkout-btn-wrap">
+                <input class="btn-checkout" type="submit" onclick="return validateForm()" value="Proceed to payment"></input>
                 <button class="btn-go-back"><a href="./cart.html">Return to cart</a></button>
             </div>
+              </form> 
+
         </div>
         <div class="cart-sum-wrap">
             <h3 class="cst">Cart Summary</h3>
@@ -77,3 +87,4 @@
 </body>
 </html>
 <script src="js/footer.js"></script>
+<script src="js/checkout.js"></script>

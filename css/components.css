@@ -322,6 +322,10 @@ hr {
         margin-right: 0;
         align-self: center;
     }
+    .hero-link-left > a {
+        margin-left: 0;
+        align-self: center;
+    }
 }
 
 @media (max-width: 803px) { /* smallest screen home page hero */
@@ -413,3 +417,30 @@ hr {
 }
 
 /* end outsourced/modified code snippet */
+
+/* following code snippet for custom form validation display sourced from here: https://codepen.io/benjaminwalsh/pen/QxXVKP */
+
+input.invalid,
+select.invalid{
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/97555/alert-circle.svg);
+  background-repeat:no-repeat;
+  background-position:right .5rem top .6rem;
+  background-size:1.5rem 1.5rem;
+}
+input + p{display:none;margin:.25rem 0 0 0;font-size:.9rem;color:}
+input.invalid + p{
+  display:block;
+}
+
+input.valid,
+select.valid {
+  background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/97555/check-circle.svg);
+  background-repeat: no-repeat;
+  background-position: right .5rem top .6rem;
+  background-size: 1.5rem 1.5rem;
+}
+select.valid,
+select.invalid {
+  background-position: right 1.25rem top .6rem;
+}
+.hidden{display:none}

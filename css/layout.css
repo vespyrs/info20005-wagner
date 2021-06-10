@@ -759,6 +759,7 @@ footer {
     }
     .contact-info-wrap {
         padding-left: var(--space-sm);
+        padding-top: var(--space-md)
     }
     .checkout-title-wrap > h1 {
         margin-bottom: 0;

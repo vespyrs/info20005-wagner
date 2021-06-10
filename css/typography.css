@@ -230,3 +230,10 @@ p {
   margin-top: var(--space-xxxs);
   margin-bottom: var(--space-sm);
 }
+
+.contact-info-form > p {
+  margin-top: -8px;
+  margin-bottom: var(--space-sm);
+  margin-left: var(--space-sm);
+  color: var(--color-error)
+}
