@@ -527,6 +527,7 @@ footer {
     padding-right: var(--space-sm);
     min-width: 250px;
     margin: var(--space-xxs);
+    margin-bottom: var(--space-lg);
 }
 
 
@@ -741,7 +742,7 @@ footer {
 }
 
 .cst {
-    text-align: center;
+    text-align: left;
     padding-left: 0;
 }
 
@@ -761,6 +762,14 @@ footer {
     }
     .checkout-title-wrap > h1 {
         margin-bottom: 0;
+    }
+    .cst {
+        text-align: center;
+    }
+    .delivery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -832,3 +841,4 @@ footer {
 .btn-home {
     text-align: center;
 }
+
