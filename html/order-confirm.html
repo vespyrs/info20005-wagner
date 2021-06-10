@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/nav.js"></script>
+    <title>Wagner Online</title>
+</head>
+<body>
+    <div class="order-confirm-wrap">
+        <h1>Thanks For Your Order!</h1>
+        <h4>Your order is currently being processed.</h4>
+        <div class="order-confirm-details">
+            <h3>Order details</h3>
+            <table class="order-details-table">
+                <tr>
+                    <td class="tdl"><h3>Confirmation will be sent to:</h3></td>
+                    <td class="tdr"><h4>deanfsmith@yahoo.com</h4></td>
+                </tr>
+                <tr>
+                    <td class="tdl"><h3>Order number:</h3></td>
+                    <td class="tdr"><h4>345734950345</h4></td>
+                </tr>
+                <tr>
+                    <td class="tdl"><h3>Order date:</h3></td>
+                    <td class="tdr"><h4 id="datetime"></h4></td>
+                </tr>
+            </table>
+            <div class="order-sum-wrap">
+                <h3 class="cst">Cart Summary</h3>
+                <div class="order-item">
+                    <div class="order-inner-wrap">
+                    <img class="img-cart" src="../images/dayton-audio-speakers.jpg">
+                    <div class="order-details-wrap">
+                        <h3>Dayton Audio IP65 Speakers</h3>
+                        <div class="order-number-wrap">
+                            <h2>$675.70</h2>
+                            <button class="quant-select" id="quant-select">1
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="subtotal-wrap">
+                    <h3>Order Total</h3>
+                    <h4>$675.70</h4>
+                </div>
+                <div class="btn-home">
+                <button class="btn-checkout"><a href="./index.html">Home</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/footer.js"></script>
+<script>
+    var datetime = new Date();
+    document.getElementById("datetime").innerHTML = datetime.toLocaleString();
+</script>

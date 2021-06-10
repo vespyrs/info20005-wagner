@@ -1,0 +1,214 @@
+@import url("https://use.typekit.net/auf0ggy.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@font-face {
+  font-family: 'DashDemo';
+  src: url('../fonts/dash-demo.ttf');
+}
+
+:root{
+  --font-primary: 'futura-pt', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  --font-special: 'DashDemo', 'Roboto', cursive;
+  
+
+   /* BASE VALUES */
+   --text-base-size: 1rem;
+
+   /* TYPE SCALE */
+   --text-scale-ratio: 1.2;
+   --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+   --text-sm: calc(1em / var(--text-scale-ratio));
+   --text-md: calc(1em * var(--text-scale-ratio));
+   --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+   --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+   --text-xxl: calc(
+     1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)
+   );
+   --text-xxxl: calc(
+     1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+       var(--text-scale-ratio)
+   );
+   --text-xxxxl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+ 
+   --baseline: 24px;
+ 
+   /* SPACING VALUES */
+   --space-sm: calc(var(--baseline) / 2);
+   --space-md: var(--baseline);
+   --space-lg: calc(var(--baseline) * 2);
+   --space-xl: calc(var(--baseline) * 3);
+ 
+   --space-xxxs: 0.25em;
+   --space-xxs: 0.375em;
+   --space-xs: 0.5em;
+   --space-sm: 0.75em;
+   --space-md: 1.25em;
+   --space-lg: 2em;
+   --space-lg-2: 2.5em;
+   --space-xl: 3.25em;
+   --space-xxl: 5.25em;
+   --space-xxxl: 8.5em;
+   --space-xxxl-2: 7.75em;
+ 
+   /* TYPOGRAPHY */
+   --color-text: var(--gray-10);
+   --color-text-heading: var(--black);
+   --color-text-subtle: var(--gray-6);
+   --color-link: var(--color-primary);
+   --color-link-visited: var(--color-primary-dark);
+ 
+   /* LINE-HEIGHT */
+   --heading-line-height: 1.2;
+   --body-line-height: 1.4;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-base-size);
+}
+
+h1 {
+  font-size: var(--text-xxxl);
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+h2 {
+  font-size: var(--text-xl);
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-style: normal;
+  margin-top: var(--space-xxxs);
+  margin-bottom: var(--space-xxxs);
+}
+
+
+h3 {
+  font-size: var(--text-lg);
+  color: var(--gray-6);
+  font-family: var(--font-primary);
+  margin-top: var(--space-xxxs);
+  margin-bottom: var(--space-xxxs);
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 {
+  font-size: var(--text-md);
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  margin-top: var(--space-xxxs);
+  margin-bottom: var(--space-xxxs);
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+h5 {
+  font-size: var(--text-sm);
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  margin-top: var(--space-xxs);
+  margin-bottom: var(--space-xxs);
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-weight: 400;
+  font-size: var(--text-lg);
+}
+
+.site-identity {
+  font-family: var(--font-special);
+  font-size: var(--text-xxxxl);
+  color: var(--color-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: var(--space-lg);
+  margin-left: var(--space-sm);
+  letter-spacing: 4px;
+}
+
+.nav-link-txt {
+  font-family: var(--font-primary);
+  font-size: var(--text-md);
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+@media (max-width: 599px) {
+  .site-identity {
+      font-size: var(--text-xxl);
+      padding-left: var(--space-xxxs);
+  }
+}
+
+@media (min-width: 600px) {
+  .site-identity {
+      font-size: var(--text-xxxl);
+  }
+}
+
+.error-text {
+  color: var(--color-error);
+  font-family: var(--font-secondary);
+  font-size: var(--text-sm);
+}
+
+.text-wrap {
+  max-width: 500px;
+}
+
+.cart-item > h3 {
+  max-width: 400px; 
+  padding: var(--space-sm);
+}
+
+.cart-title-wrap > h3, 
+.subtotal-wrap > h3,
+.cart-total-price > h3 {
+  text-transform: uppercase;
+  color: var(--color-secondary)
+}
+
+.cart-details-wrap > h2 {
+  font-weight: 700;
+}
+
+.subtotal-wrap > h4 {
+  font-weight: 800;
+  color: var(--black)
+}
+
+.av-select > option {
+  text-transform: uppercase;
+}
+
+.order-item > h3 {
+  font-size: var(--text-xxs);
+}
+
+.order-number-wrap > h2 {
+  font-size: var(--text-lg);
+}
+
+#or {
+  text-align: center;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-lg);
+}

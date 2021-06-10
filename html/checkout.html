@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <script src="../js/mobile-nav.js"></script>
+    <script src="../js/nav.js"></script>
+    <title>Wagner Online</title>
+</head>
+<body>
+    <div class="checkout-title-wrap">
+        <h1>Checkout</h1>
+    </div>
+    <div class="checkout-wrap">
+        <div class="contact-info-wrap">
+            <h3>Contact Information</h3>
+            <form class="contact-info-form">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" class="contact-info"><br>
+                <label for="country">Country/Region:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Country/Region" class="contact-info"><br>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First name" class="contact-info"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last name" class="contact-info"><br>
+                <label for="phone">Mobile phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Mobile phone" class="contact-info"><br>
+                <label for="add1">Address line 1:</label><br>
+                <input type="text" id="add1" name="add2" placeholder="Address line 1" class="contact-info"><br>
+                <label for="add2">Address line 2:</label><br>
+                <input type="text" id="add2" name="add2" placeholder="Address line 2" class="contact-info"><br>
+                <label for="suburb">Suburb:</label><br>
+                <input type="text" id="suburb" name="suburb" placeholder="Suburb" class="contact-info"><br>
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state" placeholder="State" class="contact-info"><br><br>
+              </form> 
+              <div class="checkout-btn-wrap">
+                <button class="btn-checkout"><a href="./payment.html">Proceed to payment</a></button>
+                <button class="btn-go-back"><a href="./cart.html">Return to cart</a></button>
+            </div>
+        </div>
+        <div class="cart-sum-wrap">
+            <h3 class="cst">Cart Summary</h3>
+            <div class="order-item">
+                <div class="order-inner-wrap">
+                <img class="img-cart" src="../images/dayton-audio-speakers.jpg">
+                <div class="order-details-wrap">
+                    <h3>Dayton Audio IP65 Speakers</h3>
+                    <div class="order-number-wrap">
+                        <h2>$675.70</h2>
+                        <button class="quant-select" id="quant-select">1
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="subtotal-wrap">
+                <h3>Order Total</h3>
+                <h4>$675.70</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../js/footer.js"></script>
