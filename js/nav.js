@@ -2,12 +2,12 @@ document.write('<nav>\
 <div class="navbar-top">\
     <div class="identity-wrap">\
     <button class="menu-icon" onclick="toggleNav()"><i class="material-icons">menu</i></button>\
-    <h4 class="site-identity"><a href="./index.html">Wagner</a></h4>\
+    <h4 class="site-identity"><a id="identity" href="../index.html">Wagner</a></h4>\
     </div>\
     <div class="navbar-icons">\
         <button class="nav-icon"><i class="material-icons">search</i></button>\
         <button class="nav-icon"><i class="material-icons">account_circle</i></button>\
-        <button class="nav-icon"><i class="material-icons"><a href="./cart.html">shopping_cart</a></i></button>\
+        <button class="nav-icon"><i class="material-icons"><a href="html/cart.html">shopping_cart</a></i></button>\
     </div>\
 </div>\
 <div class="navbar-bottom">\
@@ -18,7 +18,7 @@ document.write('<nav>\
                 <a>AV Installation</a>\
                 <a>Cables & Connectors</a>\
                 <div class="nav-sub-dropdown">\
-                    <a href="./category.html">Audio & Pro Sound</a>\
+                    <a href="html/category.html">Audio & Pro Sound</a>\
                     <div class="nav-sub-drop-content">\
                         <a>Australian Monitor</a>\
                         <a>Headphones</a>\
@@ -68,7 +68,7 @@ document.write('<nav>\
     </div>\
     <a class="navbar-link">AV Installation</a>\
     <a class="navbar-link">Cables & Connectors</a>\
-    <a class="navbar-link" href="./category.html">Audio & Pro Sound</a>\
+    <a class="navbar-link" href="html/category.html">Audio & Pro Sound</a>\
     <a class="navbar-link">Data & Computer</a>\
     <a class="navbar-link">Security & Surveillance</a>\
     <a class="navbar-link">Phone Accessories</a>\
