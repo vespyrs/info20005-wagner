@@ -23,7 +23,7 @@ document.write('<nav>\
                         <a>Australian Monitor</a>\
                         <a>Headphones</a>\
                         <a>Hi-Fi Equipment</a>\
-                        <a">Loudspeakers</a>\
+                        <a>Loudspeakers</a>\
                         <a>Microphones</a>\
                         <a>PA & Multi-Zone</a>\
                         <a>Speaker Automotive</a>\
