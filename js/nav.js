@@ -7,7 +7,7 @@ document.write('<nav>\
     <div class="navbar-icons">\
         <button class="nav-icon"><i class="material-icons">search</i></button>\
         <button class="nav-icon"><i class="material-icons">account_circle</i></button>\
-        <button class="nav-icon"><i class="material-icons"><a href="html/cart.html">shopping_cart</a></i></button>\
+        <button class="nav-icon"><i class="material-icons"><a id="cart-link" href="./cart.html">shopping_cart</a></i></button>\
     </div>\
 </div>\
 <div class="navbar-bottom">\
@@ -18,7 +18,7 @@ document.write('<nav>\
                 <a>AV Installation</a>\
                 <a>Cables & Connectors</a>\
                 <div class="nav-sub-dropdown">\
-                    <a href="html/category.html">Audio & Pro Sound</a>\
+                    <a id="audio-link" href="./category.html">Audio & Pro Sound</a>\
                     <div class="nav-sub-drop-content">\
                         <a>Australian Monitor</a>\
                         <a>Headphones</a>\
@@ -68,7 +68,7 @@ document.write('<nav>\
     </div>\
     <a class="navbar-link">AV Installation</a>\
     <a class="navbar-link">Cables & Connectors</a>\
-    <a class="navbar-link" href="html/category.html">Audio & Pro Sound</a>\
+    <a class="navbar-link" id="audio-link" href="./category.html">Audio & Pro Sound</a>\
     <a class="navbar-link">Data & Computer</a>\
     <a class="navbar-link">Security & Surveillance</a>\
     <a class="navbar-link">Phone Accessories</a>\
