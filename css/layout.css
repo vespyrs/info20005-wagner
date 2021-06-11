@@ -787,6 +787,7 @@ footer {
 .cst {
     text-align: left;
     padding-left: 0;
+    padding-top: var(--space-sm);
 }
 
 @media (max-width: 955px) { /* checkout smaller screen */
@@ -814,6 +815,9 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .promo-code {
+        margin: 0 auto;
     }
 }
 

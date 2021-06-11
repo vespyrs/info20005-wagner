@@ -492,3 +492,37 @@ select.invalid {
 .fa:hover {
     color: var(--color-primary);
 }
+
+.promo-code {
+    width: 300px;
+    position: relative;
+    padding-left: var(--space-xs);
+    padding-top: var(--space-md);
+}
+      
+.promo-input {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    background-color: var(--white);
+    padding-left: 5px;
+}
+      
+.promo-submit {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    color: var(--black);
+    background-color: var(--color-primary);
+    text-transform: uppercase;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+    margin: 0 auto;
+    margin-right: -5px;
+    transform: translateY(var(--space-md));
+}
