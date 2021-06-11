@@ -237,3 +237,7 @@ p {
   margin-left: var(--space-sm);
   color: var(--color-error)
 }
+
+.add-alert {
+  padding: var(--space-xs);
+}

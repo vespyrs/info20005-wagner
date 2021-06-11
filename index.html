@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/mobile-nav.js"></script>
     <script src="js/nav.js"></script>
     <title>Wagner Online</title>
@@ -14,7 +15,7 @@
     <div class="hero-wrapper">
         <div class="hero-row">
             <div class="hero-link-left" id="hero-audio">
-                <a href=".category.html"><button class="hero-button-left">Shop Audio & Pro Sound</button></a>
+                <a href="./category.html"><button class="hero-button-left">Shop Audio & Pro Sound</button></a>
             </div>
             <div class="hero-link-right" id="hero-electrical">
                 <button class="hero-button-right">Shop Elec. Components</button>
@@ -38,106 +39,129 @@
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/bosch-fan.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Clear Phone Case for iPhone 12</h3>
             <div class="price-wrapper">
                 <h2>$1,237</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-a" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
+            </div>
+            </div>
+        </div>
+        <a href="./product.html">
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/dayton-audio-speakers.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Dayton Audio 1P65 Speakers</h3>
+            <div class="price-wrapper">
+                <h2>$675.70</h2>
+                <div class="add-to-cart-wrapper" id="add-b" onclick="addIconClick(this.id);return detectClick()">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </a>
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/subwoofer.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Dayton Audio 1066 Subwoofer</h3>
+            <div class="price-wrapper">
+                <h2>$740.05</h2>
+                <div class="add-to-cart-wrapper" id="add-c" onclick="addIconClick(this.id)">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/bosch-fan.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Bosch Ceiling PA</h3>
+            <div class="price-wrapper">
+                <h2>$39.50</h2>
+                <div class="add-to-cart-wrapper" id="add-d" onclick="addIconClick(this.id)">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/bosch-fan.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Clear Phone Case for iPhone 12</h3>
+            <div class="price-wrapper">
+                <h2>$1,237</h2>
+                <div class="add-to-cart-wrapper" id="add-e" onclick="addIconClick(this.id)">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
             </div>
         </div>
         <div class="item-wrapper">
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/dayton-audio-speakers.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Dayton Audio 1P65 Speakers</h3>
             <div class="price-wrapper">
                 <h2>$675.70</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-f" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
+            </div>
             </div>
         </div>
         <div class="item-wrapper">
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/subwoofer.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Dayton Audio 1066 Subwoofer</h3>
             <div class="price-wrapper">
                 <h2>$740.05</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-g" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
+            </div>
             </div>
         </div>
         <div class="item-wrapper">
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/bosch-fan.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Bosch Ceiling PA</h3>
             <div class="price-wrapper">
                 <h2>$39.50</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-h" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
             </div>
-        </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/bosch-fan.jpg">
             </div>
-            <h3>Clear Phone Case for iPhone 12</h3>
-            <div class="price-wrapper">
-                <h2>$1,237</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
-            </div>
-        </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/dayton-audio-speakers.jpg">
-            </div>
-            <h3>Dayton Audio 1P65 Speakers</h3>
-            <div class="price-wrapper">
-                <h2>$675.70</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
-            </div>
-        </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/subwoofer.jpg">
-            </div>
-            <h3>Dayton Audio 1066 Subwoofer</h3>
-            <div class="price-wrapper">
-                <h2>$740.05</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
-            </div>
-        </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/bosch-fan.jpg">
-            </div>
-            <h3>Bosch Ceiling PA</h3>
-            <div class="price-wrapper">
-                <h2>$39.50</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
-            </div>
-        </div>
+        </div> 
+        
+    
+    </div>
+    <button class="btn-checkout" id="home-link-further">See All Products On Sale</button>
+    </div>
     </div>
     <h1>Popular Products</h1>
     <div class="item-grid">
@@ -145,106 +169,127 @@
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/bosch-fan.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Clear Phone Case for iPhone 12</h3>
             <div class="price-wrapper">
                 <h2>$1,237</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-i" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
+            </div>
+            </div>
+        </div>
+        <a href="./product.html">
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/dayton-audio-speakers.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Dayton Audio 1P65 Speakers</h3>
+            <div class="price-wrapper">
+                <h2>$675.70</h2>
+                <div class="add-to-cart-wrapper" id="add-j" onclick="addIconClick(this.id);return detectClick()">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </a>
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/subwoofer.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Dayton Audio 1066 Subwoofer</h3>
+            <div class="price-wrapper">
+                <h2>$740.05</h2>
+                <div class="add-to-cart-wrapper" id="add-k" onclick="addIconClick(this.id)">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/bosch-fan.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Bosch Ceiling PA</h3>
+            <div class="price-wrapper">
+                <h2>$39.50</h2>
+                <div class="add-to-cart-wrapper" id="add-l" onclick="addIconClick(this.id)">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="item-wrapper">
+            <div class="item-img-wrapper">
+                <img class="img-item" src="images/bosch-fan.jpg">
+            </div>
+            <div class="item-details-wrapper">
+            <h3>Clear Phone Case for iPhone 12</h3>
+            <div class="price-wrapper">
+                <h2>$1,237</h2>
+                <div class="add-to-cart-wrapper" id="add-m" onclick="addIconClick(this.id)">
+                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
+                </div>
+            </div>
             </div>
         </div>
         <div class="item-wrapper">
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/dayton-audio-speakers.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Dayton Audio 1P65 Speakers</h3>
             <div class="price-wrapper">
                 <h2>$675.70</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-n" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
+            </div>
             </div>
         </div>
         <div class="item-wrapper">
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/subwoofer.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Dayton Audio 1066 Subwoofer</h3>
             <div class="price-wrapper">
                 <h2>$740.05</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-o" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
+            </div>
             </div>
         </div>
         <div class="item-wrapper">
             <div class="item-img-wrapper">
                 <img class="img-item" src="images/bosch-fan.jpg">
             </div>
+            <div class="item-details-wrapper">
             <h3>Bosch Ceiling PA</h3>
             <div class="price-wrapper">
                 <h2>$39.50</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-p" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
             </div>
-        </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/bosch-fan.jpg">
-            </div>
-            <h3>Clear Phone Case for iPhone 12</h3>
-            <div class="price-wrapper">
-                <h2>$1,237</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
             </div>
         </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/dayton-audio-speakers.jpg">
-            </div>
-            <h3>Dayton Audio 1P65 Speakers</h3>
-            <div class="price-wrapper">
-                <h2>$675.70</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
-            </div>
-        </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/subwoofer.jpg">
-            </div>
-            <h3>Dayton Audio 1066 Subwoofer</h3>
-            <div class="price-wrapper">
-                <h2>$740.05</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
-            </div>
-        </div>
-        <div class="item-wrapper">
-            <div class="item-img-wrapper">
-                <img class="img-item" src="images/bosch-fan.jpg">
-            </div>
-            <h3>Bosch Ceiling PA</h3>
-            <div class="price-wrapper">
-                <h2>$39.50</h2>
-                <div class="add-to-cart-wrapper">
-                    <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
-                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
-                </div>
-            </div>
-        </div>
+        
+    </div>
+    <button class="btn-checkout" id="home-link-further">See All Popular Products</button>
     </div>
 </body>
 </html>

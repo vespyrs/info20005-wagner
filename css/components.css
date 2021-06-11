@@ -444,3 +444,42 @@ select.invalid {
   background-position: right 1.25rem top .6rem;
 }
 .hidden{display:none}
+
+/* end sourced code block */
+
+.pagination {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: var(--space-lg);
+}
+
+.pagination a {
+  color: var(--black);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: var(--color-success);
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: var(--gray-1);
+  border-radius: 5px;
+}
+
+.fa {
+  font-size: 30px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: var(--space-xxxxs);
+  color: var(--color-primary-dark);
+}
+.fa:hover {
+    color: var(--color-primary);
+}

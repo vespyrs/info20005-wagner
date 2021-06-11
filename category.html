@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/mobile-nav.js"></script>
     <script src="js/nav.js"></script>
     <title>Wagner Online</title>
@@ -19,7 +20,7 @@
         <button>Australian Monitor</button>
         <button>Headphones</button>
         <button>Hi-Fi Equipment</button>
-        <button href="./subcategory.html">Loudspeakers</button>
+        <button>Loudspeakers</button>
         <button>Microphones</button>
         <button>PA & Multi-Zone</button>
         <button>Speaker Automotive</button>
@@ -77,7 +78,7 @@
             <h3>Clear Phone Case for iPhone 12</h3>
             <div class="price-wrapper">
                 <h2>$1,237</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-1" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -93,7 +94,7 @@
             <h3>Dayton Audio 1P65 Speakers</h3>
             <div class="price-wrapper">
                 <h2>$675.70</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-2" onclick="addIconClick(this.id);return detectClick()">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -109,7 +110,7 @@
             <h3>Dayton Audio 1066 Subwoofer</h3>
             <div class="price-wrapper">
                 <h2>$740.05</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-3" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -124,7 +125,7 @@
             <h3>Bosch Ceiling PA</h3>
             <div class="price-wrapper">
                 <h2>$39.50</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-4" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -139,7 +140,7 @@
             <h3>Clear Phone Case for iPhone 12</h3>
             <div class="price-wrapper">
                 <h2>$1,237</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-5" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -154,7 +155,7 @@
             <h3>Dayton Audio 1P65 Speakers</h3>
             <div class="price-wrapper">
                 <h2>$675.70</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-6" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -169,7 +170,7 @@
             <h3>Dayton Audio 1066 Subwoofer</h3>
             <div class="price-wrapper">
                 <h2>$740.05</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-7" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -184,7 +185,7 @@
             <h3>Bosch Ceiling PA</h3>
             <div class="price-wrapper">
                 <h2>$39.50</h2>
-                <div class="add-to-cart-wrapper">
+                <div class="add-to-cart-wrapper" id="add-8" onclick="addIconClick(this.id)">
                     <button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>
                     <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>
                 </div>
@@ -192,6 +193,15 @@
             </div>
         </div>
     </div>
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
     </div>
 </body>
 <div class="mobile-refine-menu" id="mobile-refine-menu">
@@ -205,7 +215,7 @@
         <a class="filter-link">Australian Monitor</a>
         <a class="filter-link">Headphones</a>
         <a class="filter-link">Hi-Fi Equipment</a>
-        <a class="filter-link" href="./subcategory.html">Loudspeakers</a>
+        <a class="filter-link">Loudspeakers</a>
         <a class="filter-link">Microphones</a>
         <a class="filter-link">PA & Multi-Zone</a>
         <a class="filter-link">Speaker Automotive</a>

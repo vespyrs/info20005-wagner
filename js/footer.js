@@ -25,6 +25,11 @@ document.body.innerHTML += '<footer>\
     </div>\
     <div class="footer-col-1">\
         <h3>Connect With Us</h3>\
+        <div class="footer-sm-wrap">\
+            <a class="fa fa-facebook"></a>\
+            <a class="fa fa-twitter"></a>\
+            <a class="fa fa-instagram"></a>\
+        </div>\
     </div>\
 </div>\
 </footer>'

@@ -46,12 +46,18 @@ function addSingleClick() { // add to cart button on single product page
   }, 400)
 }
 
-function addIconClick(itemid) { // add to cart button on category page
-  var id = "add-button-" + itemid
-  document.getElementById(id).innerHTML = "ADDED!"
+function addIconClick(itemid) { // add to cart button on category & home page
+  var tick = document.getElementById(itemid)
+  console.log(itemid);
+  tick.innerHTML = '<h4 class="add-alert">ADDED!</h4>'
   setTimeout(function() {
-      document.getElementById(id).innerHTML = "ADD TO CART"
+      tick.innerHTML = '<button class="btn-add"><i class="material-icons" id="item-cart-btn">add</i></button>\
+                    <button class="btn-cart"><i class="material-icons" id="item-cart-btn">shopping_cart</i></button>'
   }, 500)
+}
+
+function detectClick(){
+    return false; // add this line
 }
 
 window.onbeforeunload = function () {

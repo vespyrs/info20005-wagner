@@ -304,13 +304,17 @@ nav {
     }
 }
 
-.single-item-wrapper {
+.single-item-wrapper, .single-item-further {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
     margin-bottom: var(--space-lg);
+}
+
+.single-item-further {
+    justify-content: flex-start;
 }
 
 .single-item-img-wrapper {
@@ -322,6 +326,11 @@ nav {
     display: flex;
     flex-direction: column;
     margin-right: var(--space-sm);
+}
+
+.tech-specs, .related-products {
+    width: 500px;
+    padding: var(--space-xs);
 }
 
 .item-description {
@@ -337,8 +346,12 @@ nav {
     .item-hero-img {
         width: 90vw; 
     }
-    .single-item-wrapper {
+    .single-item-wrapper, .single-item-further {
         width: 100vw;
+    }
+    .single-item-further {
+        margin-left: var(--space-md);
+        margin-right: var(--space-md);
     }
 }
 
@@ -358,6 +371,13 @@ nav {
     }
     .item-carousel-img {
         margin-right: var(--space-sm);
+    }
+
+    .single-item-further {
+        justify-content: center;
+    }
+    .single-item-further {
+        margin-top: -50px;
     }
 }
 
@@ -384,11 +404,16 @@ footer {
     display: flex;
     flex-direction: column;
     padding: var(--space-sm);
+    width: 200px
 }
 
 .footer-col-1 > a {
-    color: var(--color-secondary);
+    color: var(--color-primary-dark);
     padding-bottom: var(--space-xxs);
+}
+
+.footer-col-1 > a:hover {
+    color: var(--color-primary);
 }
 
 .cart-wrapper, .checkout-wrap {
@@ -553,6 +578,9 @@ footer {
     .hero-wrapper, .checkout-title-wrap,
     .order-confirm-wrap {
         padding-top: 88px;
+    }
+    .single-item-wrapper {
+        padding-top: 100px;
     }
     #nav-mobile-menu  {
         height: 100%;
@@ -826,6 +854,10 @@ footer {
     padding-right: var(--space-sm);
 }
 
+th {
+    padding: var(--space-xxs);
+}
+
 @media (max-width: 411px) { /* order confirm smallest screen */
     .tdl > h3,
     .order-details-wrap > h3 {
@@ -843,3 +875,8 @@ footer {
     text-align: center;
 }
 
+#home-link-further {
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-bottom: var(--space-lg)
+}
