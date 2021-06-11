@@ -250,3 +250,7 @@ p {
 .footer-col-1 > h3 {
   padding-bottom: var(--space-xs);
 }
+
+.refine-heading-wrap > h3 {
+  padding-bottom: var(--space-xs);
+}
