@@ -686,6 +686,11 @@ footer {
     .refine-menu-content {
         margin-left: var(--space-lg);
     }
+    .hero-link-left,
+    .hero-link-right,
+    .hero-link {
+        height: 150px;
+    }
 }
 
 @media (min-width: 600px) { /* desktop menu */
