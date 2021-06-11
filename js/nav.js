@@ -68,7 +68,7 @@ document.write('<nav>\
     </div>\
     <a class="navbar-link">AV Installation</a>\
     <a class="navbar-link">Cables & Connectors</a>\
-    <a class="navbar-link" id="audio-link" href="./category.html">Audio & Pro Sound</a>\
+    <a class="navbar-link" id="audio-link-mobile" href="./category.html">Audio & Pro Sound</a>\
     <a class="navbar-link">Data & Computer</a>\
     <a class="navbar-link">Security & Surveillance</a>\
     <a class="navbar-link">Phone Accessories</a>\
