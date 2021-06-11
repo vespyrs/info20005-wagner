@@ -87,8 +87,17 @@
 }
 
 .img-item {
-    height: 260px;
     width: 260px;
+    height: auto;
+    
+}
+
+.item-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
 }
 
 #item-cart-btn {
